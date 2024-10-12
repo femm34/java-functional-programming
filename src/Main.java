@@ -1,3 +1,4 @@
+import Implementation.CalculatorImpl;
 import Implementation.TransformerImpl;
 
 import java.util.Arrays;
@@ -16,5 +17,7 @@ public class Main {
 //                .sum();
 //        System.out.println(sumaImpares);
         TransformerImpl.main();
+        System.out.println("--------------------------");
+        CalculatorImpl.main();
     }
 }
