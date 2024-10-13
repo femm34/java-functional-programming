@@ -1,5 +1,7 @@
 import Implementation.CalculatorImpl;
+import Implementation.CombinerImpl;
 import Implementation.TransformerImpl;
+import Implementation.UmbralFilterImpl;
 
 import java.util.Arrays;
 import java.util.List;
@@ -16,8 +18,14 @@ public class Main {
 //                .mapToInt(Integer::intValue)
 //                .sum();
 //        System.out.println(sumaImpares);
+        System.out.println("--------------------------");
+        System.out.println("--------------------------");
         TransformerImpl.main();
         System.out.println("--------------------------");
         CalculatorImpl.main();
+        System.out.println("--------------------------");
+        UmbralFilterImpl.main();
+        System.out.println("--------------------------");
+        CombinerImpl.main();
     }
 }
