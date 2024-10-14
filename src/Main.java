@@ -1,7 +1,4 @@
-import Implementation.CalculatorImpl;
-import Implementation.CombinerImpl;
-import Implementation.TransformerImpl;
-import Implementation.UmbralFilterImpl;
+import Implementation.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -27,5 +24,7 @@ public class Main {
         UmbralFilterImpl.main();
         System.out.println("--------------------------");
         CombinerImpl.main();
+        System.out.println("--------------------------");
+        CriterionImpl.main();
     }
 }

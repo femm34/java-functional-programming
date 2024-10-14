@@ -5,11 +5,14 @@ import Interfaces.Combiner;
 public class CombinerImpl {
     public static void main() {
         Combiner combiners = (firstWord, secondWord) -> firstWord + "      " + secondWord;
-
-        String newString = combiners.combine("Hello", "world!");
+        Combiner combinersInterface = CombinerImpl::mergeWords;
 
         System.out.println("here begins the CombinerImpl implementation: ");
-        System.out.println(newString);
+        System.out.println(combinersInterface.combine("Hello", "world!"));
 
+    }
+
+    private static String mergeWords(String firstWord, String secondWord) {
+        return firstWord + "      " + secondWord;
     }
 }
